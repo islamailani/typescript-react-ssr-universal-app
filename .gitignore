@@ -57,3 +57,13 @@ typings/
 # dotenv environment variables file
 .env
 
+# storage
+storage
+
+# Build
+client/*.js
+client/*.js.map
+server/*.js
+server/*.js.map
+
+*.DS_Store

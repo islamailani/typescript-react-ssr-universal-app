@@ -1,0 +1,23 @@
+{
+  "name": "typescript-react-loadable-server-rendering",
+  "version": "1.0.0",
+  "description": "React, code splitting, hmr and ssr using typescript",
+  "main": "server/index.js",
+  "author": "Mariusz Rajczakowski",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint --project ./tsconfig.json",
+    "clean": "rimraf client server",
+    "build-dev": "npm run clean && webpack --config config/webpack.config.dev.js",
+    "build-prod": "npm run clean && webpack --config config/webpack.config.prod.js",
+    "dev": "NODE_ENV=development && node server/main.js",
+    "prod": "NODE_ENV=production && node server/main.js"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}
