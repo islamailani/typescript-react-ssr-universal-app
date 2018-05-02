@@ -1,6 +1,5 @@
-const path = require("path");
-const webpack = require("webpack");
-const { ReactLoadablePlugin } = require("react-loadable/webpack");
+const path = require('path');
+const webpack = require('webpack');
 const baseConfig = require('../mixins/webpack.client.mixin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ExtractPlugin = new ExtractTextPlugin({
@@ -10,13 +9,13 @@ const ExtractPlugin = new ExtractTextPlugin({
 module.exports = {
   ...baseConfig,
   devtool: 'source-map',
-  mode: "production",
+  mode: 'production',
   entry: {
     main: [
-      "babel-polyfill",
-      path.join(__dirname, "..", "src", "client/index.tsx")
+      'babel-polyfill',
+      path.join(__dirname, '..', 'src', 'client/index.tsx')
     ],
-    app: path.join(__dirname, "..", "src", "styles/app.scss"),
+    app: path.join(__dirname, '..', 'src', 'styles/app.scss'),
   },
   module: {
     rules: [

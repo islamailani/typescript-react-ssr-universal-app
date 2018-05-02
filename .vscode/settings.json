@@ -9,7 +9,7 @@
   ],
   "prettier.jsxBracketSameLine": true,
   "editor.minimap.enabled": false,
-  "typescript.tsdk": "node_modules/typescript/lib",
+"typescript.tsdk": "node_modules/typescript/lib",
   "files.exclude": {
       "client": true,
       "server": true,

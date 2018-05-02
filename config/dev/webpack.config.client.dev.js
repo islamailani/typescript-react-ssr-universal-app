@@ -1,6 +1,5 @@
-const path = require("path");
-const webpack = require("webpack");
-const { ReactLoadablePlugin } = require("react-loadable/webpack");
+const path = require('path');
+const webpack = require('webpack');
 const baseConfig = require('../mixins/webpack.client.mixin');
 
 module.exports = {
