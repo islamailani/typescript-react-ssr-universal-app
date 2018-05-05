@@ -5,7 +5,7 @@ import FactoryConfig from './FactoryConfig';
 
 const getTime = () => moment().format('YYYY-MM-DD HH:mm:ss:SSS');
 
-export default (config: FactoryConfig) => {
+export default (config: FactoryConfig = {}) => {
     winston.cli();
     return new winston.Logger({
         exitOnError: false,

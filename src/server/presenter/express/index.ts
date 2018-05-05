@@ -18,6 +18,6 @@ const server = createServer(expressApp);
 
 server.listen(config.express.port, () => {
   const logger = loggerFactory(config.logger);
-  logger.info(`Listening on  ${config.express.host}:${config.express.port}`);
+  logger.info(`Listening on http://${config.express.host}:${config.express.port}`);
   handleListen(logger);
 });
